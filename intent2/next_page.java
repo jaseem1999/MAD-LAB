@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.net.Uri;
 
 public class next_page extends AppCompatActivity {
 
@@ -19,7 +20,7 @@ public class next_page extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(next_page.this,MainActivity3.class);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.marvel.com/"));
                 startActivity(intent);
             }
         });
